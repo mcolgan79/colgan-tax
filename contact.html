@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Colgan Tax</title>
+  <meta name="description" content="Contact Colgan Tax to book a consultation for individual tax, business tax, bookkeeping, or short-term rental tax services.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo-wordmark">Colgan<span class="tax">TAX</span></span>
+        <span class="logo-rules"><span class="rule-1"></span><span class="rule-2"></span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="short-term-rentals.html">Short-Term Rentals</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html#consultation" class="btn btn-primary">Schedule a Consultation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-small">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk about your taxes.</h1>
+      <p style="max-width:600px;">Fill out the form below or reach out directly — I'll get back to you within one business day.</p>
+    </div>
+  </section>
+
+  <section id="consultation" class="bg-paper-alt">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>Send a Message</h2>
+        <!--
+          Netlify Forms: this form is auto-detected at deploy time because of
+          data-netlify="true" and the hidden form-name field. No backend needed.
+          Submissions show up in the Netlify dashboard under Forms.
+        -->
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none;">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
+
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="field">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option>Individual Tax Preparation</option>
+              <option>Business Tax Preparation</option>
+              <option>Bookkeeping</option>
+              <option>Short-Term Rental Tax</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell me a bit about your situation..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>Direct Contact</h2>
+        <p><strong>Phone:</strong> <a href="tel:+13214181947">(321) 418-1947</a><br>
+        <strong>Email:</strong> <a href="mailto:mike@colgan.tax">mike@colgan.tax</a><br>
+        <strong>Location:</strong> Winter Park, FL 32789<br>
+        <strong>Hours:</strong> [e.g. Mon–Fri, 9am–5pm]</p>
+
+        <h2 style="margin-top:32px;">Client Portal</h2>
+        <p>Existing clients can securely upload documents and e-sign through the client portal.</p>
+        <a href="#" class="btn btn-outline">Go to Client Portal</a>
+        <p style="font-size:0.85rem;margin-top:8px;">[Link to your secure portal — e.g. Liscio, SafeSend, TaxDome, or Canopy — once selected.]</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="logo-wordmark">Colgan<span class="tax">TAX</span></span>
+          <p class="footer-tagline">Personal service, year-round support, and attention to every detail. It just makes cents.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <p><a href="services.html">Our Services</a><br>
+          <a href="short-term-rentals.html">Short-Term Rentals</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="contact.html">Contact Us</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Winter Park, FL 32789<br>
+          <a href="tel:+13214181947">(321) 418-1947</a><br>
+          <a href="mailto:mike@colgan.tax">mike@colgan.tax</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Colgan Tax Prep. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
